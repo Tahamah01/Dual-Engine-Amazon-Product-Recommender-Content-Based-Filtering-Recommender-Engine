@@ -71,6 +71,7 @@ amazon_recommender/
 │   ├── tfidf_matrix.joblib      # Tuple: (TF-IDF Sparse Matrix, Fitted Vectorizer)
 │   └── transformer_vectors.pt   # Pre-computed PyTorch dense embeddings tensor
 │
+├── 01_CBF_data_cleaning.ipynb   # Data cleaning notebook
 ├── .gitignore                   # Git exclusion rules
 ├── .python-version              # Python version target
 ├── app.py                       # Streamlit web application frontend
