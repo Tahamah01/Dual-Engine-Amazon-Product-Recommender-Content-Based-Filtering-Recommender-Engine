@@ -1,6 +1,6 @@
 # Dual-Engine Amazon Product Recommendation System
 
-An end-to-end, production-grade Content-Based Filtering (CBF) recommendation engine built on the Amazon Product Reviews dataset (Cell Phones & Accessories). 
+An end-to-end Content-Based Filtering (CBF) recommendation engine built on the Amazon Product Reviews dataset (Cell Phones & Accessories). 
 
 This project implements and compares two distinct recommendation strategies:
 1. **Sparse Baseline (TF-IDF):** Fast, exact keyword matching using term frequency-inverse document frequency and cosine similarity.
@@ -56,7 +56,7 @@ The system is architected around an **Offline Embedding Pipeline** and an **Onli
 * **Dual-Engine Comparison:** Side-by-side benchmark of traditional lexical matching vs. modern deep semantic embeddings.
 * **Item-to-Item Recommendations:** Input an Amazon ASIN to instantly retrieve top K similar products.
 * **Free-Text Semantic Search:** Vectorizes arbitrary user queries on the fly (*e.g., "waterproof heavy-duty case for galaxy"*) using Nomic query prompts.
-* **Sub-Millisecond Inference:** Pre-computed PyTorch vectors and TF-IDF sparse matrices load directly into RAM on startup, avoiding runtime re-embedding.
+* **Low-Latency Inference:** Pre-computed PyTorch vectors and TF-IDF sparse matrices load directly into RAM on startup, avoiding runtime re-embedding.
 * **Decoupled Architecture:** Asynchronous FastAPI REST server with `lifespan` state management, completely separated from the Streamlit frontend.
 
 ---
